@@ -51,7 +51,7 @@ class _TransactionFormState extends State<TransactionForm> {
                 FlatButton(
                   child: Text('Nova Transaçao'),
                   onPressed: _submitForm,
-                  color: Colors.blue,
+                  color: Theme.of(context).primaryColor,
                   textColor: Colors.white,
                 ),
               ],
