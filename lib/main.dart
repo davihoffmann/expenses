@@ -29,11 +29,13 @@ class ExpensesApp extends StatelessWidget {
               ),
             ),
         appBarTheme: AppBarTheme(
-            textTheme: ThemeData.light().textTheme.copyWith(
+          textTheme: ThemeData.light().textTheme.copyWith(
                 title: TextStyle(
                     fontFamily: 'OpenSans',
                     fontSize: 20,
-                    fontWeight: FontWeight.bold))),
+                    fontWeight: FontWeight.bold),
+              ),
+        ),
       ),
     );
   }
@@ -106,11 +108,11 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Container(
-              height: availableHeight * 0.3,
+              height: availableHeight * 0.25,
               child: Chart(_recentTransactions),
             ),
             Container(
-              height: availableHeight * 0.7,
+              height: availableHeight * 0.75,
               child: TransactionList(_transaction, _removeTransaction),
             ),
           ],
